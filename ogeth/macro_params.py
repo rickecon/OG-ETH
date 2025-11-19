@@ -152,7 +152,7 @@ def get_macro_params(
         # source: IMF GFS (12.0.0), indicator G271_T, Budgetary central government
         # source link: https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA:GFS_SOO(12.0.0)&INDICATOR=G271_T
         # 2023 = 3.38% of GDP
-        macro_parameters["alpha_T"] = [0.034]
+        macro_parameters["alpha_T"] = [0.034 + 0.016]
 
         # alpha_G, total government expenditure as a fraction of GDP
         # source: IMF WEO (9.0.0), indicator GGX, General government expenditure (% of GDP)
@@ -164,7 +164,7 @@ def get_macro_params(
         # source: from the IMF WEO, Series ETH.GGXWDG_NGDP.A — Gross general government debt (% of GDP).
         # The IMF value annualizes Ethiopia’s fiscal year data (July–June) to the calendar year.
         # 2023/24 (mapped to CY2024) = 32.66% of GDP
-        macro_parameters["initial_debt_ratio"] = 0.327
+        macro_parameters["initial_debt_ratio"] = 0.314
 
         # initial_foreign_debt_ratio, share of external debt in total public sector debt
         # source: Ministry of Finance, Public Sector Debt Portfolio Analysis No. 25 (2019/20–2023/24)

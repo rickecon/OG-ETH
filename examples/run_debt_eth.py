@@ -67,18 +67,18 @@ def main():
         updated_params = c.get_dict()
         p.update_specifications(updated_params)
 
-    # Update tax and spending parameters
-    updated_params = {
-        "alpha_T": [0.33],
-        "alpha_G": [0.27],
-        "cit_rate": [[0.28]],
-        "tau_c": [0.16],
-        "tau_payroll": [0.16],
-        "etr_params": [[[0.03]]],
-        "mtrx_params": [[[0.20]]],
-        "mtry_params": [[[0.20]]],
-    }
-    p.update_specifications(updated_params)
+    # # Update tax and spending parameters
+    # updated_params = {
+    #     "alpha_T": [0.33],
+    #     "alpha_G": [0.27],
+    #     "cit_rate": [[0.28]],
+    #     "tau_c": [[0.16]],
+    #     "tau_payroll": [0.16],
+    #     "etr_params": [[[0.03]]],
+    #     "mtrx_params": [[[0.20]]],
+    #     "mtry_params": [[[0.20]]],
+    # }
+    # p.update_specifications(updated_params)
 
     # Run model
     start_time = time.time()
